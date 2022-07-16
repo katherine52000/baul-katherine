@@ -1,15 +1,23 @@
+import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
+import Header from "./componentes/Header"
+import Section from "./componentes/Section"
 
-import './App.css'
-import Navbar from "./componentes/navbar/Navbar"
 
-function App() {
- return(
+class App extends React.Component {
+    render() {
+        return (
 
-<Navbar/>
+            <div className='app'>
+                <Router>
+                    <Header />
+                    <Section />
 
- )
-
+                </Router>
+                holaa reaxct
+            </div>
+        );
+    }
 }
 
 export default App
-

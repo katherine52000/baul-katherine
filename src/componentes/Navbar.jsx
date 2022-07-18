@@ -3,10 +3,10 @@ import Menu from "./svg/bars-solid.svg"
 import Close from "./svg/circle-xmark-regular.svg"
 import CartIcon from "./svg/cart-arrow-down-solid.svg"
 import {Link} from 'react-router-dom'
-import './css/Header.css'
+import './css/Navbar.css'
 
 
-export class Header extends Component {
+export class Navbar extends Component {
 state = {
   toggle : false
 }
@@ -55,4 +55,4 @@ state = {
   }
 }
 
-export default Header
+export default Navbar

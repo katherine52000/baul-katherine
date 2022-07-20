@@ -2,21 +2,21 @@ import React, { Component } from "react";
 import "./css/Cards.css";
 
 
-function Card(titulo, ImgUrl, Body) {
+function Card(cardContent) {
   return (
     <div className="card-container">
       <div className="image-container">
-        <img src={ImgUrl}  alt="" />
+     <img src="./img/tdb1.jpg " alt="" />
       </div>
       <div className="card-title">
-<h3>titulo de la card</h3>
+        <h3>{cardContent.titulo}</h3>
       </div>
       <div className="card-body">
-        <p>{Body} Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, dolorem</p>
+        <p>{cardContent.Body}</p>
       </div>
       <div className="btn">
         <button>
-            <a>view more</a>
+          <a>view more</a>
         </button>
       </div>
     </div>
@@ -24,4 +24,3 @@ function Card(titulo, ImgUrl, Body) {
 }
 
 export default Card;
-

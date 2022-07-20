@@ -1,29 +1,24 @@
-import React from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
-import Navbar from "./componentes/Navbar"
-import Cards from "./componentes/Cards"
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Navbar from "./componentes/Navbar";
+import Cards from "./componentes/Cards";
+
+function App(){
+ 
+    return (
+      <div className="app">
+        <Router>
+          <Navbar />
+
+          <Cards 
+          titulo="Card title"
+           Body="loremasdfghjkl" />
 
 
-class App extends React.Component{
-    render() {
-        return (
+        </Router>
+      </div>
+    );
+  }
 
-            <div className='app'>
-                <Router>
-                    <Navbar/>
 
-                    <Cards
-                    titulo='Card title'
-                    ImgUrl=''
-                    Body= 'loremasdfghjkl'
-
-                    />
-
-                </Router>
-               
-            </div>
-        );
-    }
-}
-
-export default App
+export default App;

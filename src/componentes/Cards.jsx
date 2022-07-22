@@ -20,7 +20,10 @@ function Card(cardContent) {
         </button>
       </div>
     </div>
+
   );
+
+  
 }
 
 export default Card;

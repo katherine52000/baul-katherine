@@ -2,23 +2,27 @@ import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./componentes/Navbar";
 import Cards from "./componentes/Cards";
-
-function App(){
- 
-    return (
-      <div className="app">
-        <Router>
-          <Navbar />
-
-          <Cards 
-          titulo="Card title"
-           Body="loremasdfghjkl" />
+import Contador from "./componentes/Contador";
 
 
-        </Router>
-      </div>
-    );
-  }
+function App() {
+  
+  return (
+    <div className="app">
+      <Router>
+        <Navbar />
+        <Contador
+        />
+        <Cards 
+        titulo="Card title"
+         Body="loremasdfghjkl"
+          />
+
+      </Router>
 
 
-export default App;
+    </div>
+  );
+}
+
+export default App 

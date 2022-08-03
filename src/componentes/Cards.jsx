@@ -2,17 +2,17 @@ import React, { Component } from "react";
 import "./css/Cards.css";
 
 
-function Card(cardContent) {
+function Card({producto}) {
   return (
     <div className="card-container">
       <div className="image-container">
      <img src="./img/tdb1.jpg " alt="" />
       </div>
       <div className="card-title">
-        <h3>{cardContent.titulo}</h3>
+        <h3>{producto.title}</h3>
       </div>
       <div className="card-body">
-        <p>{cardContent.Body}</p>
+        <p>{producto.price}</p>
       </div>
       <div className="btn">
         <button>

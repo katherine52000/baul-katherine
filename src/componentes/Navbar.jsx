@@ -28,7 +28,7 @@ state = {
 </div>
 
 <nav>
-  <ul className={toggle ? "toggle" : ""}>
+  <ul className={toggle ? "toggle" : ""} >
     <li><Link to="/">home</Link></li>
     <li><Link to="/">Producto</Link></li>
     <li><Link to="/">contacto</Link></li>

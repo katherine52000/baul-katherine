@@ -1,10 +1,84 @@
 .card-container {
   width: 300px;
+  min-height: 200px;
   overflow: hidden;
   box-shadow: 0px 0px 15px -5px;
+  margin: 11px;
+  transition: 8.5 linear;
+  text-align: center;
+  gap: 2rem;
+  padding: 5px;
+
+}
+
+.card-container:hover{
+  box-shadow: none;
 }
 
 .image-container{
   overflow: hidden;
-  height: 200px;
+  height: 250px;
+  max-width: 300px;
+  object-fit: cover;
+  
+}
+
+.card-container h3{
+  font-size: medium;
+}
+
+
+.card-container p {
+  display: inline-block;
+font-size: 14px;
+font-weight: 700;
+color: #fa6338;
+}
+
+#productos-card{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.div-imagen img{
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  display: block;
+  object-fit: cover;
+}
+
+.card-container button{
+  border: none;
+  outline: none;
+  background-color: black;
+  color: beige;
+  width: 12rem;
+  height: 2rem;
+  border-radius:5px ;
+  position: relative;
+ 
+}
+.div-contador button{
+border: none;
+background-color: white;
+color: rgb(62, 60, 60);
+height: 3em;
+
+}
+
+.div-contador h2{
+  font-size: 1em;
+  font-weight: bold;
+}
+.boton-operadores{
+  display: flex;
+  flex-direction: row;
+}
+.div-contador{
+  max-height: 200px;
+  border-color: pink;
 }

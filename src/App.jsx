@@ -6,19 +6,18 @@ import Contador from "./componentes/Contador";
 import {ProductsListContainer} from "./componentes/ProductsListContainer";
 import ProductsDetailContainer from "./componentes/ProductsDetailContainer";
 
-
 function App() {
 
   return (
     <div className="app">
       <Router>
         <Navbar />
-        
+        {/* <VistaProductos/> */}
         <Routes>
           <Route path="/" element={<ProductsListContainer />} />
           <Route path="/title/:titleProducts" element={<ProductsListContainer />} />
           <Route path="/id/:idProducts" element={<ProductsDetailContainer />} />
-
+         
         </Routes>
 
 

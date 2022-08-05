@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./css/Cards.css";
 import Contador from "./Contador"
+import { Link } from "react-router-dom";
 
 
 function Card({producto}) {
@@ -21,7 +22,7 @@ function Card({producto}) {
       </div>
       <div className="btn">
         <button>
-          <a>view more</a>
+          <Link to={`/id/${producto.id}`}>view more</Link>
         </button>
     
       </div>

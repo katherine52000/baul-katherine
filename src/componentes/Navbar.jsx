@@ -30,10 +30,10 @@ state = {
 <nav>
   <ul className={toggle ? "toggle" : ""} >
     <li><Link to="/">home</Link></li>
-    <li><Link to="/">Producto</Link></li>
-    <li><Link to="/">contacto</Link></li>
-    <li><Link to="/">sobre nosotros</Link></li>
-    <li><Link to="/">entrar/registrarte</Link></li>
+    <li><Link to="/title/electronics">electronica</Link></li>
+    <li><Link to="/title/women's clothing">women's clothing</Link></li>
+    <li><Link to="/title/men's clothing">men's clothing</Link></li>
+    <li><Link to="/title/jewelery">jewelery</Link></li>
     <li className='close'onClick={this.menuToggle}>
     <img src={Close} alt="" width="20"/>
     </li>

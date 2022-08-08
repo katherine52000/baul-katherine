@@ -10,25 +10,36 @@ const Promesa = new Promise((res, rej) => {
 
   }, 2000)
 })
-export  function ProductsListContainer() {
+export function ProductsListContainer() {
   const [productos, setProductos] = useState([])
   const { titleProducts } = useParams()
+
   console.log(titleProducts)
 
   useEffect(() => {
-    Promesa
-      .then((ArrayProducts) => setProductos(ArrayProducts))
+    if (titleProducts) {
+      Promesa 
+        .then(ArrayProducts => setProductos(ArrayProducts.filter(elements => elements.category == titleProducts)))
+    } else {
+      Promesa
+        .then((ArrayProducts) => setProductos(ArrayProducts))
 
-      .catch((err) => console.log(err)); 
-
-  }, [])
-
-
-// console.log(productos)
-
-return (
- <ProductList productos={productos}/>
+        .catch((err) => console.log(err));
 
 
-)
+    }
+
+
+
+
+  }, [titleProducts])
+
+
+  // console.log(productos)
+
+  return (
+    <ProductList productos={productos} />
+
+
+  )
 }

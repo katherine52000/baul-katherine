@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./css/Cards.css";
-import Contador from "./Contador"
 import { Link } from "react-router-dom";
 
 
@@ -18,7 +17,7 @@ function Card({producto}) {
         <p className="price">${producto.price}</p>
       </div>
       <div>
-        <Contador/>
+     
       </div>
       <div className="btn">
         <button>

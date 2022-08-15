@@ -12,7 +12,7 @@ const ProductsDetailContainer = () => {
     setTimeout(() => {
       res(ArrayProducts)
 
-    }, 2000)
+    }, 1000)
   })
 
   const [productos, setProductos] = useState([])
